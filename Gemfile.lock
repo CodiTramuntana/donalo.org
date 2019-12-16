@@ -350,11 +350,9 @@ GEM
       connection_pool (~> 2.2)
     net_http_ssl_fix (0.0.10)
     netrc (0.11.0)
-    newrelic_rpm (6.11.0.365)
-    nio4r (2.5.7)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
-      racc (~> 1.4)
+    nio4r (2.4.0)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -709,7 +707,10 @@ DEPENDENCIES
   mini_racer
   money-rails (~> 1.8.0)
   mysql2 (= 0.4.10)
+<<<<<<< HEAD
   newrelic_rpm (~> 6.11.0)
+=======
+>>>>>>> Disable New Relic
   omniauth-facebook (~> 5.0.0)
   omniauth-google-oauth2 (>= 0.6.0)
   omniauth-linkedin-oauth2 (>= 1.0.0)
