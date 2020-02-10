@@ -1,6 +1,10 @@
 # Sharetribe
 
+<<<<<<< HEAD
 [![CircleCI](https://circleci.com/gh/sharetribe/sharetribe/tree/master.svg?style=svg)](https://circleci.com/gh/sharetribe/sharetribe/tree/master) [![Code Climate](https://codeclimate.com/github/sharetribe/sharetribe.png)](https://codeclimate.com/github/sharetribe/sharetribe)
+=======
+[![CircleCI](https://circleci.com/gh/coopdevs/sharetribe/tree/master.svg?style=svg)](https://circleci.com/gh/coopdevs/sharetribe/tree/master) [![Dependency Status](https://gemnasium.com/sharetribe/sharetribe.png)](https://gemnasium.com/sharetribe/sharetribe) [![Code Climate](https://codeclimate.com/github/sharetribe/sharetribe.png)](https://codeclimate.com/github/sharetribe/sharetribe)
+>>>>>>> Point Circle CI README badge to coopdevs repo
 
 Sharetribe develops advanced marketplace software for every business life cycle stage.
 
