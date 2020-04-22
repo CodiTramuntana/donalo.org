@@ -185,10 +185,5 @@ gem 'rubyzip', '~> 1.3.0'
 gem 'bootsnap', require: false
 gem "select2-rails"
 gem "cocoon"
-<<<<<<< HEAD
 gem "fast-polylines"
 gem "codemirror-rails"
-=======
-
-#gem 'donalo_payments', path: 'donalo_payments'
->>>>>>> adding donalo_payments engine with a few monkey patches
