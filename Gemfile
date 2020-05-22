@@ -185,5 +185,5 @@ gem 'rubyzip', '~> 1.3.0'
 gem 'bootsnap', require: false
 gem "select2-rails"
 gem "cocoon"
-gem "fast-polylines"
-gem "codemirror-rails"
+
+gem 'donalo_payments', path: 'engines/donalo_payments'
