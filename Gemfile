@@ -186,4 +186,4 @@ gem 'bootsnap', require: false
 gem "select2-rails"
 gem "cocoon"
 
-gem 'donalo_payments', path: 'engines/donalo_payments'
+gem 'donalo', path: 'engines/donalo'
