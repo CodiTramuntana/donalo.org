@@ -71,7 +71,6 @@ test-results.xml
 client/.vimrc
 storage/
 
-storage/
-
 # Deployment
 .toolbelt/
+tags
