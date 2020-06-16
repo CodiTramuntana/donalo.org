@@ -138,7 +138,7 @@ ca:
         first_name_only: "Només el nom (Primer)"
         invalid_color_code: "El codi de color ha de contenir 6 caràcters, nombres o lletres de la A a la F, per exemple D96E21"
         custom_head_script: "Script personalitzat"
-        custom_head_script_instructions_text: "Es pot configurar un script personalitzat <a href='%{url}'> al teu nou tauler d'administració </a>."
+        custom_head_script_instructions_text: "Aquest script serà afegit al <head> de cada pàgina i podrà ser usat per afegir un CSS personalitzat, JavaScript o HTML. Si us plau, recorda que futures actualitzacions de Sharetribe poden fer que el teu script deixi de funcionar correctament."
         current_image: "Imatge actual:"
       edit_text_instructions:
         edit_text_instructions: "Textos d’instrucció"
@@ -188,17 +188,24 @@ ca:
       getting_started:
         getting_started: "Comença aquí"
       available_languages:
+<<<<<<< HEAD
         bg: ~
         ca: ~
         cs: Txec
         da-DK: Danès
         de: Alemany
         el: Grec
+=======
+        cs: Txec
+        da-DK: Danès
+        de: Alemany
+>>>>>>> Bring in latest Catalan translation from WTI
         en: Anglés
         en-AU: "Anglés (Australia)"
         en-GB: "Anglés (Regne Unit)"
         es: Espanyol
         es-ES: "Espanyol (Espanya)"
+<<<<<<< HEAD
         et: ~
         fi: Finlandès
         fr: Francès
@@ -209,6 +216,15 @@ ca:
         ja: Japonès
         ko: Coreà
         lt: ~
+=======
+        fi: Finlandès
+        fr: Francès
+        fr-CA: "Francès (Canadá)"
+        el: Grec
+        it: Italià
+        ja: Japonès
+        ko: Coreà
+>>>>>>> Bring in latest Catalan translation from WTI
         nb: "Norueg Bokmål"
         nl: Holandès
         pl: Polac
@@ -684,6 +700,7 @@ ca:
         when_you_change_your_sharetribe_domain: "Quan canvieu el domini de Sharetribe, tots els vostres URL canviaran automàticament. Se us redirigirà a la nova adreça del vostre mercat. Vostè i els usuaris hauran de tornar a iniciar la sessió. El vostre domini anterior del mercat no serà en cap cas enllaçat ni redirigit al nou. El domini antic quedarà disponible per a que l’utilitzin altres."
         would_you_like_to_proceed: "Voleu continuar?"
         change: Canviar
+<<<<<<< HEAD
         you_can_now_enable_a_custom_domain: ~
         read_more_about_the_set_up_of_your_custom_domain: ~
         set_custom_domain: ~
@@ -716,6 +733,8 @@ ca:
         checks_passed_with_warning: ~
         this_domain_is_not_configured_correctly: ~
         start_using_the_custom_domain: ~
+=======
+>>>>>>> Bring in latest Catalan translation from WTI
       landing_pages:
         landing_pages: "Pàgina de destinació"
         info_1: "És possible que la pàgina de destinació sigui la pàgina més important del vostre mercat. És la primera pàgina que veuen els visitants, com la porta principal de casa vostra. Només tens uns segons per convèncer els nous visitants que explorin el vostre lloc. La pàgina ha de ser atractiva i la vostra proposta de valor ha de ser clara i atractiva."
@@ -862,8 +881,13 @@ ca:
           main_title: "Títol principal"
           column_header: "Columna %{index}"
           column_title: "Títol de la columna %{index}"
+<<<<<<< HEAD
           column_icon_info: "Per afegir icones cal un pas manual per part de l’equip de Sharetribe. Si us plau, %{link} per seleccionar la icona que hagueu triat i compartiu-la amb l'assistència de Sharetribe."
           column_icon_info_link: "seguiu les instruccions d'aquest article"
+=======
+          web_viewer: "visualitzador en línia"
+          column_icon_info: "Pots triar la icona d'aquesta columna en aquest %{link}. Una vegada que seleccionis la icona còpia tot el \"Directory path\" (per exemple '01 -Interface Essential / 01-Home / house-2.svg ') i enganxa'l aquí."
+>>>>>>> Bring in latest Catalan translation from WTI
           column_icon: "Icona de la columna %{index}"
           column_paragraph: "Paràgraf de la columna %{index}"
           column_button: "Botó de la columna %{index}"
@@ -1300,8 +1324,12 @@ ca:
       details: "Detalls de l'ordre"
       order_by: "Ordre realitzada per %{orderer_link}"
       accept_offer: "Acceptar l'oferta"
+<<<<<<< HEAD
       accept_request: ~
       accept_request_and_close: ~
+=======
+      accept_request: "Acceptar sol·licitud"
+>>>>>>> Bring in latest Catalan translation from WTI
       reject_offer: "Aquesta vegada no"
       reject_request: "Aquesta vegada no"
       close_listing: "Tancar la llista %{listing_title_link}"
@@ -1574,7 +1602,11 @@ ca:
     confirmation_instructions_v2:
       headline: "confirma el teu correu per unir-te a %{service_name}.e"
       need_to_confirm: "Confirma el teu correu per completar el teu compte a %{service_name}. És molt fàcil - només fes clic al botó de sota."
+<<<<<<< HEAD
       confirmation_link_text: ~
+=======
+      confirmation_link_text: "Confirmar %{email}"
+>>>>>>> Bring in latest Catalan translation from WTI
     common:
       hey: "Hola %{name},"
       hi: "Hola %{name}."
@@ -1624,11 +1656,19 @@ ca:
       has_commented_listing_you_follow_in_kassi: "%{author} ha comentat a l'anunci '%{listing}' que estàs seguint a %{service_name}."
     new_message:
       view_message: "Veure missatge"
+<<<<<<< HEAD
       has_sent_you_a_message_in_kassi: "%{sender} us ha enviat un missatge. Aneu a %{service_name} per respondre."
       you_have_a_new_message: "Tens un nou missatge de %{sender_name} a %{service_name}"
     new_message_v2:
       headline: "tens un missatge"
       reply: "Cliqueu aquí per respondre a %{sender}"
+=======
+      has_sent_you_a_message_in_kassi: "%{sender} t'ha enviat un missatge en %{service_name}."
+      you_have_a_new_message: "Tens un nou missatge en %{service_name} de %{sender_name}"
+    new_message_v2:
+      headline: "tens un missatge"
+      reply: "Respondre a %{sender}"
+>>>>>>> Bring in latest Catalan translation from WTI
     new_payment:
       new_payment: "Has rebut un nou pagament"
       price_per_unit_type: "Preu per %{unit_type}"
@@ -1760,8 +1800,13 @@ ca:
       welcome_email_subject: "Benvingut a %{service_name}"
       welcome_to_marketplace: "Benvinguts a %{service_name}! Ens encanta que estiguis amb nosaltres."
       love_marketplace_crew: "Una salutació de l'equip de <br /><i>%{service_name}</i>"
+<<<<<<< HEAD
       welcome_email_footer_text: "%{settings_link}"
       settings_link_text: "Edita la configuració de correu electrònic aquí"
+=======
+      welcome_email_footer_text: "Quina classe de correus desitja rebre de %{service_name}? %{settings_link}"
+      settings_link_text: "Revisa la teva configuració"
+>>>>>>> Bring in latest Catalan translation from WTI
     new_listing_by_followed_person:
       subject: "%{author_name} ha publicat un nou anunci a%{service_name}"
       has_posted_a_new_listing: "%{author_name} ha publicat un nou anunci"
@@ -1773,6 +1818,7 @@ ca:
       you_are_receiving_this_because: "Has rebut aquesta notificació perquè segueixes a %{author_name}"
       view_listing: "Veure %{title}"
       cant_click: "No pots fer clic al botó? Aquí hi ha un enllaç per la teva conveniència:"
+<<<<<<< HEAD
     new_ident_notification:
       subject: "L'adreça del teu mercat va canviar"
       h1_body: "L'adreça URL de %{community_name} ha canviat."
@@ -1782,6 +1828,8 @@ ca:
       p_line4: "Nova URL del panell d'administració: %{link}"
       p_line5: "Pots iniciar sessió al teu mercat amb el mateix compte que abans."
       button: "Ves a %{text}"
+=======
+>>>>>>> Bring in latest Catalan translation from WTI
     new_member_notification:
       subject: "Nou membre a %{community}"
       new_member_has_joined: "Un nou membre s'ha unit a %{community}. És possible que encara hagin de confirma la seva adreça de correu electrònic."
@@ -1830,7 +1878,11 @@ ca:
     transaction_cancel_flow:
       the_order_about: "l'ordre de %{listing_title}"
       you_can_contact_the_marketplace_team: "Pots contactar a l'equip de %{service_name} si hi ha algun altre problema."
+<<<<<<< HEAD
       you_can_now_give_feedback: "Ara pots escriure una valoració a %{name}. Deixar una valoració és sempre una bona idea. Si tot va anar bé, hauries de contar als altres que %{name} és de confiança. Si hi va haver algun problema, també és bo que ho mencionis."
+=======
+      you_can_now_give_feedback: "Ara pots escriure una valoració a %{name}. Deixar una valoració és sempre una bona idea. Si tot va anar bé, hauries de contar als altres que %{recipient} és de confiança. Si hi va haver algun problema, també és bo que ho mencionis."
+>>>>>>> Bring in latest Catalan translation from WTI
       give_feedback_to: "Donar una valoració a %{name}"
     transaction_disputed:
       subject: "Ordre disputada - L'equip de %{service_name} està revisant la situació"
@@ -2079,7 +2131,11 @@ ca:
       list: "Mostrar llista"
       map_button: Mapa
       grid_button: "Vista resumida"
+<<<<<<< HEAD
       list_button: Llista
+=======
+      list_button: LLista
+>>>>>>> Bring in latest Catalan translation from WTI
       all_listing_types: "Tots els tipus d'anuncis"
       all_categories: "Totes les categories"
     errors:
@@ -2186,7 +2242,10 @@ ca:
       settings: Opcions
       sign_up: Registre
     notifications:
+<<<<<<< HEAD
       recaptcha_verification_failure: "error de verificació de reCAPTCHA"
+=======
+>>>>>>> Bring in latest Catalan translation from WTI
       listing_could_not_be_saved: "L'anunci no s'ha pogut publicar. Per favor, intenta-ho de nou i si torna a fallar, contacta amb l'administrador %{contact_admin_link}."
       contact_admin_link_text: "contacteu amb l’equip %{service_name}"
       test_welcome_email_delivered_to: "El missatge de prova a estat enviat a %{email}"
@@ -2262,7 +2321,10 @@ ca:
       reply_cannot_be_empty: "No pots enviar un missatge buit"
       reply_sent: "Resposta enviada amb èxit"
       request_accepted: "Sol·licitud acceptada"
+<<<<<<< HEAD
       request_accepted_and_closed: ~
+=======
+>>>>>>> Bring in latest Catalan translation from WTI
       request_confirmed: "Comanda completada"
       request_rejected: "Sol·licitud rebutjada"
       request_canceled: "Comanda disputada"
@@ -2897,10 +2959,17 @@ ca:
       newsletters: "Correus electrònics dels administradors"
       community_updates: Butlletins
       email_about_confirm_reminders: "... m'he oblidat de confirmar una comanda com a completada"
+<<<<<<< HEAD
       email_about_new_comments_to_own_listing: "...algú ha comentat al meu anunci"
       email_about_new_messages: "...algú m'envia un missatge"
       email_about_new_received_testimonials: "...algú em dóna suggeriments"
       email_about_testimonial_reminders: "...he oblidat fer un suggeriment o donar informació sobre una comanda"
+=======
+      email_about_new_comments_to_own_listing: "...algú ha comentat la meva oferta o sol·licitud"
+      email_about_new_messages: "...algú m'envia un missatge"
+      email_about_new_received_testimonials: "...algú em dóna suggeriments"
+      email_about_testimonial_reminders: "...he oblidat fer un suggeriment o donar informació sobre un esdeveniment"
+>>>>>>> Bring in latest Catalan translation from WTI
       email_daily_community_updates: "Envieu-me un butlletí <b>diari</b> si hi ha anuncis nous"
       email_weekly_community_updates: "Envieu-me un butlletí <b>setmanal</b> si hi ha anuncis nous"
       do_not_email_community_updates: "No m’envieu butlletins"
@@ -2915,8 +2984,11 @@ ca:
       homepage_link: "pàgina principal"
       unsubscribe_unsuccesful: "Error en cancel·lar la subscripció"
       unsuccessful_unsubscribe_info_text: "L’enllaç de baixa de subscripció ha caducat. Inicieu la sessió per canviar la configuració de la subscripció de correu electrònic."
+<<<<<<< HEAD
       email_listing_new_comment: ~
       email_listing_updated: ~
+=======
+>>>>>>> Bring in latest Catalan translation from WTI
     profile:
       about_you: "Sobre tu:"
       city: "Ciutat:"
@@ -3043,7 +3115,11 @@ ca:
       december: Des
     today: Avui
     clear: Reiniciar
+<<<<<<< HEAD
     format: mm/dd/yyyy
+=======
+    format: mm/dd/aaaa
+>>>>>>> Bring in latest Catalan translation from WTI
   time:
     formats:
       short: "%b %e %Y al %H:%M"
@@ -3182,10 +3258,13 @@ ca:
         zero: transaccions
         one: transacció
         other: transaccions
+<<<<<<< HEAD
       listing:
         zero: anunci
         one: anunci
         other: anuncis
+=======
+>>>>>>> Bring in latest Catalan translation from WTI
     previous_label: "&#8592; Anterior"
     next_label: "Següent &#8594;"
     page_gap: "&hellip;"
@@ -3281,9 +3360,12 @@ ca:
       bank_routing_2: "Codi  de la sucursal"
       bank_currency: "Divisa del compte del banc"
       update_also_bank_account: "Modificar el compte del banc també"
+<<<<<<< HEAD
       bank_account_same_country: ~
       bank_country: ~
       bank_holder_name: ~
+=======
+>>>>>>> Bring in latest Catalan translation from WTI
       messages:
         account_number: "Número de compte"
         routing_number: "Número de ruta/routing"
