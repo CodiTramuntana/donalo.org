@@ -24,6 +24,7 @@ PATH
     donalo (0.1.0)
       mysql2 (~> 0.4.1)
       rails (~> 5.2.3)
+      sqlite3
 
 GEM
   remote: https://rubygems.org/
