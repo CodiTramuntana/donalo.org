@@ -51,7 +51,7 @@ def clean_db
 end
 
 def set_strategy(strategy)
-  DatabaseCleaner.strategy = strategy
+  DatabaseCleaner.strategy = strategy, { except: %w[masked_people] }
   Cucumber::Rails::Database.javascript_strategy = strategy
 end
 
