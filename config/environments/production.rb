@@ -74,13 +74,13 @@ Rails.application.configure do
 
   # Prefer redis instead of memcached
   config.cache_store =
-    if ENV["redis_host"].present?
+    if ENV["REDIS_URL"].present?
       [:redis_cache_store, {
         driver: :hiredis,
         namespace: ENV["redis_cache_namespace"] || "cache",
         compress: true,
         timeout: 1,
-        url: "redis://#{ENV["redis_host"]}:#{ENV["redis_port"]}/#{ENV["redis_db"]}",
+        url: ENV["REDIS_URL"],
         expires_in: ENV["redis_expires_in"] || 240 # default, 4 hours in minutes
       }]
     else
