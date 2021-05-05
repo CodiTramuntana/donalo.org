@@ -1,13 +1,15 @@
-deploy_to = '/var/www/donalo/'
-shared_path = "#{deploy_to}/shared"
+if ENV.key?('DEPLOY_TO')
+  deploy_to = ENV['DEPLOY_TO']
+  shared_path = "#{deploy_to}/shared"
 
-working_directory "#{deploy_to}/current"
+  working_directory "#{deploy_to}/current"
 
-pid "#{shared_path}/pids/unicorn.pid"
-stderr_path "#{shared_path}/log/unicorn.err.log"
-stdout_path "#{shared_path}/log/unicorn.std.log"
+  pid "#{shared_path}/pids/unicorn.pid"
+  stderr_path "#{shared_path}/log/unicorn.err.log"
+  stdout_path "#{shared_path}/log/unicorn.std.log"
+end
 
-worker_processes 2
+worker_processes Integer(ENV["WEB_CONCURRENCY"] || 1)
 
 # Leverage Ruby 2.0+'s Copy-On-Write support
 preload_app true
