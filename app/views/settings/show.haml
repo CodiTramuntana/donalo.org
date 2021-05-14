@@ -114,7 +114,9 @@
         - custom_field.with_type do |field_type|
           - prefix = "person[custom_field_values_attributes][]"
           .inline-label-container
-            = label "person_custom_fields", index, "#{custom_field.name(I18n.locale)}#{custom_field.required ? '*' : ''}",
+            - name = custom_field.name(I18n.locale)
+            - next if name == '_Rol' # or hide all that start with "_"?
+            = label "person_custom_fields", index, "#{}#{custom_field.required ? '*' : ''}",
               class: 'inline'
             - if custom_field.public?
               %small= t('settings.profile.shown_in_your_public_profile')

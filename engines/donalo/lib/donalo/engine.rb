@@ -6,6 +6,17 @@ module Donalo
       g.test_framework :rspec
     end
 
+
+    module ApplicationControllerOverride
+      def fetch_current_user_pro_role
+        @is_current_user_pro = Donalo::PersonRole.new(@current_user).pro?
+      end
+    end
+
+    initializer "donalo/monkey_patch/is_current_user_pro" do |app|
+      ::ApplicationController.prepend(ApplicationControllerOverride)
+    end
+
     module SendPaymentReceiptsOverride
       def seller_should_receive_receipt(_seller_id)
         false

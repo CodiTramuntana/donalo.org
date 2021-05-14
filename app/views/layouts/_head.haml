@@ -32,7 +32,9 @@
 
   - unless Rails.env.test?
     = stylesheet_link_tag 'donalo/styles.css'
-    = stylesheet_link_tag 'donalo/styles-non-admin.css' unless @is_current_community_admin
+
+    - if !@is_current_community_admin && !@is_current_user_pro
+      = stylesheet_link_tag 'donalo/styles-non-admin.css'
 
   - if @hide_referer
     %meta{name: "referrer", content: "no-referrer"}

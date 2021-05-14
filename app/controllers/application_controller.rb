@@ -29,6 +29,7 @@ class ApplicationController < ActionController::Base
     :save_current_host_with_port,
     :fetch_community_membership,
     :redirect_removed_locale,
+    :fetch_current_user_pro_role,
     :set_locale,
     :redirect_locale_param,
     :setup_seo_service,
