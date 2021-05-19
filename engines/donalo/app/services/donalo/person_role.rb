@@ -2,7 +2,7 @@ module Donalo
   class PersonRole
     attr_reader :person
 
-    CUSTOM_FIELD_NAME = 'Rol'.freeze
+    CUSTOM_FIELD_NAME = '_Rol'.freeze
     PRO_CUSTOM_FIELD_TITLE = 'Pro'.freeze
 
     def initialize(person)
