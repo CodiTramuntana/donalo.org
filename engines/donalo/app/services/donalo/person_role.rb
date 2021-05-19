@@ -16,6 +16,8 @@ module Donalo
       custom_field_value_options.include? pro_option_id
     end
 
+    private
+
     def custom_field_value_options
       return [] unless custom_field_value
 
