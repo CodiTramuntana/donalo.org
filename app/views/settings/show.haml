@@ -115,8 +115,8 @@
           - prefix = "person[custom_field_values_attributes][]"
           .inline-label-container
             - name = custom_field.name(I18n.locale)
-            - next if name == '_Rol' # or hide all that start with "_"?
-            = label "person_custom_fields", index, "#{}#{custom_field.required ? '*' : ''}",
+            - next if name == '_Rol' && !@service.admin_acts_as_person?
+            = label "person_custom_fields", index, "#{custom_field.name(I18n.locale)}#{custom_field.required ? '*' : ''}",
               class: 'inline'
             - if custom_field.public?
               %small= t('settings.profile.shown_in_your_public_profile')
