@@ -117,3 +117,8 @@ end
 category.translations.find_or_create_by(name: 'Accesorios y ropa') do |translation|
   translation.locale = 'es'
 end
+
+Category.all.each do |category|
+  category.listing_shapes = ListingShape.all
+  category.save!
+end
