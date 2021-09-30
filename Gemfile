@@ -162,7 +162,6 @@ group :development, :test do
   gem 'pry-byebug'
 end
 
-
 gem 'mini_racer', platforms: :ruby
 gem 'js-routes', '~> 1.3.3'
 
