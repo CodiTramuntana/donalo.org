@@ -11,6 +11,7 @@ gem 'sass-rails', '~> 5.0.6'
 gem 'compass-rails', '~> 3.0.2'
 
 gem 'jquery-rails', '~> 4.3.1'
+gem 'psych', '~> 3.1'
 
 # Bundle the extra gems:
 
@@ -92,7 +93,7 @@ gem 'faraday', '~> 0.13.0'
 gem 'faraday_middleware', '~> 0.11.0'
 gem 'faraday-encoding', '~> 0.0.4'
 
-gem "react_on_rails", ">= 11.3.0"
+gem "react_on_rails", "~> 11.3.0"
 
 gem 'sitemap_generator', '~> 5.3.1'
 
@@ -128,7 +129,7 @@ group :development do
   gem 'guard-rspec', '~> 4.7.3', require: false
   gem 'listen', '~> 3.1.5'
   gem 'annotate', '~> 2.7.5'
-  gem 'zeus', '~> 0.15.13', require: false
+  gem 'zeus', '0.15.13', require: false
   gem 'web-console', '~> 3.7.0'
   gem 'awesome_print', '~> 1.7.0'
 end
@@ -162,7 +163,8 @@ group :development, :test do
   gem 'pry-byebug'
 end
 
-gem 'mini_racer', platforms: :ruby
+
+# gem 'mini_racer', platforms: :ruby
 gem 'js-routes', '~> 1.3.3'
 
 # Color utilities needed for landing page
@@ -181,10 +183,12 @@ gem 'memoist'
 gem 'biz'
 gem 'ffi', '>= 1.9.25'
 gem 'rubyzip', '~> 1.3.0'
-gem 'bootsnap', require: false
+gem 'bootsnap', '1.4.3'
 gem "select2-rails"
 gem "cocoon"
 
 gem 'donalo', path: 'engines/donalo'
 gem 'scenic'
 gem 'scenic-mysql_adapter'
+gem "fast-polylines"
+gem "codemirror-rails"
