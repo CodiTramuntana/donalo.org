@@ -1,0 +1,18 @@
+development: &defaults
+  # Database configuration
+  DB_PASSWORD: "database password"
+  DB_USERNAME: "database username"
+  DB_DATABASE: "database name"
+
+  
+integration:
+  <<: *defaults 
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+test:
+  <<: *defaults

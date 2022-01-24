@@ -1,35 +1,31 @@
-defaults: &defaults
-    adapter: mysql2
-    database: <%= ENV.fetch('DATABASE_NAME', '') %>
-    encoding: utf8
-    username: <%= ENV.fetch('DATABASE_USER', '') %>
-    password: <%= ENV.fetch('DATABASE_PASSWORD', '') %>
-    host: <%= ENV.fetch('DATABASE_HOST', 'localhost') %>
+# MySQL. Versions 5.5.8 and up are supported.
+#
+# Install the MySQL driver
+#   gem install mysql2
+#
+# Ensure the MySQL gem is defined in your Gemfile
+#   gem 'mysql2'
+#
+# And be sure to use new-style password hashing:
+#   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
+#
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  database: <%= ENV['DB_DATABASE'] %>
+  host: localhost
 
 development:
-    adapter: mysql2
-    database: sharetribe_development
-    encoding: utf8
-    username: # ADD DATABASE USERNAME
-    password: # ADD DATABASE PASSWORD
-    host: localhost
+  <<: *default
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test: &test
-    adapter: mysql2
-    database: sharetribe_test
-    encoding: utf8
-    username: root
-    password: secret
-    host: mysql
-
+test:
+  <<: *default
+  
 staging:
-  <<: *defaults
+  <<: *default
 
 production:
-  <<: *defaults
-
-cucumber:
-  <<: *test
+  <<: *default
