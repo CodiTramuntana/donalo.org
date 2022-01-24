@@ -15,8 +15,9 @@ gem 'jquery-rails', '~> 4.3.1'
 # Bundle the extra gems:
 
 # gem 'heroku' install the Heroku toolbelt (https://toolbelt.heroku.com/) instead (as gem had some problems)
-gem "passenger", '~> 6.0.1'
-gem 'unicorn', '~> 5.5', '>= 5.5.1'
+# gem "passenger", '~> 6.0.1'
+# gem 'unicorn', '~> 5.5', '>= 5.5.1'
+gem 'puma', '~> 5.5', '>= 5.5.2'
 
 gem "mysql2", '0.4.10'
 gem "bcrypt", '3.1.12'
@@ -150,7 +151,6 @@ group :test do
 
   gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: 'd188f6ad796f498a3d6e9b6b087172d8c150f325'
   gem 'poltergeist'
-  gem 'puma'
   gem 'webdrivers'
 end
 
