@@ -163,6 +163,7 @@ group :development, :test do
   gem "capistrano", "~> 3.16", require: false
   gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano-rbenv', '~> 2.2', require: false
+  gem 'capistrano3-puma', require: false
 end
 
 

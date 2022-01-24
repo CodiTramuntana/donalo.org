@@ -8,29 +8,21 @@ set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends o
 set :rbenv_ruby, File.read('.ruby-version').strip
 set :rbenv_prefix, "RAILS_ENV=#{fetch(:stage)} RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 
+set :puma_conf, "#{shared_path}/config/puma.rb"
+set :puma_service_unit_name, "#{fetch(:application)}.puma.service"
+
 append :linked_files, 'config/application.yml', 'config/puma.rb'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'node_modules', 'storage'
 
-namespace :puma do
-  desc 'Stop puma'
-  task :stop do
-    on roles(:all) do
-      file_pid = "#{fetch(:deploy_to)}/shared/tmp/pids/server.pid"
-      execute "if [ -f #{file_pid} ] && [ -s #{file_pid} ] && [ -d /proc/$(cat #{file_pid}) ]
-      then kill -9 $(cat #{file_pid})
-      fi"
-    end
-  end
-  
-  desc 'Start puma'
-  task :start do
-    on roles(:all) do
+namespace :npm do
+  desc 'Install node modules'
+  task :install do
+    on roles(:app) do
       within release_path do
-        execute :bundle, "exec puma -d"
+        execute :npm, 'install'
       end
     end
   end
 end
 
-after 'deploy', 'puma:stop'
-after 'deploy', 'puma:start'
+after 'bundler:install', 'npm:install'
