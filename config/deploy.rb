@@ -8,7 +8,7 @@ set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends o
 set :rbenv_ruby, File.read('.ruby-version').strip
 set :rbenv_prefix, "RAILS_ENV=#{fetch(:stage)} RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 
-append :linked_files, 'config/application.yml', 'config/puma.rb', 'config/master.key'
+append :linked_files, 'config/config.yml', 'config/puma.rb', 'config/master.key'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'node_modules', 'storage'
 
 namespace :puma do
