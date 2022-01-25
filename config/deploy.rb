@@ -24,5 +24,50 @@ namespace :npm do
     end
   end
 end
-
 after 'bundler:install', 'npm:install'
+
+namespace :delayed_job do
+  desc 'Start the delayed_job process'
+  task :start do
+    on roles(:app) do
+      execute :sudo, :systemctl, :start, 'donalo.delayed_job.service'
+    end
+  end
+  desc 'Stop the delayed_job process'
+  task :stop do
+    on roles(:app) do
+      execute :sudo, :systemctl, :stop, 'donalo.delayed_job.service'
+    end
+  end
+  desc 'Restart the delayed_job process'
+  task :restart do
+    on roles(:app) do
+      execute :sudo, :systemctl, :restart, 'donalo.delayed_job.service'
+    end
+  end
+end
+after 'deploy:finished', 'delayed_job:restart'
+
+namespace :sphinx do
+  desc 'Start the sphinx process'
+  task :start do
+    on roles(:app) do
+      execute :sudo, :systemctl, :start, 'donalo.sphinx.service'
+    end
+  end
+
+  desc 'Stop the sphinx process'
+  task :stop do
+    on roles(:app) do
+      execute :sudo, :systemctl, :stop, 'donalo.sphinx.service'
+    end
+  end
+
+  desc 'Restart the sphinx process'
+  task :restart do
+    on roles(:app) do
+      execute :sudo, :systemctl, :restart, 'donalo.sphinx.service'
+    end
+  end
+end
+after 'deploy:finished', 'sphinx:restart'
