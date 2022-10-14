@@ -2046,8 +2046,14 @@ ca:
       default_content: "Aquí pots trobar informació sobre com funciona %{marketplace_name}"
     docs:
       title: "Manual per usuaris"
-      content: "Aquí pots descarregar el manual per usuaris:"
+      content: "<b>La Guia de suport a l'usuari d'equips reacondicionats</b> t'ajudarà a resoldre els teus dubtes sobre què son els equips reacciondicionats, Linux, els components de l'ordinador i les fallades més comuns d'un ordinador"
       download_btn: "Descarregar"
+      content_2: "Un cop adquirit un ordinador recirculat a donalo.org et continuem donant suport tècnic i assesorament a través de <a href='mailto:info@donalo.org'>info@donalo.org</a>"
+      content_3: "Si adquereixes un equip reacondicionat a Donalo, és un equip:"
+      li_1: "Que <b>provè de donacions</b> d'empreses i particulars"
+      li_2: "Que ha sigut restaurat perfectament i se li dona una <b>segona oportunitat amb garanties</b>. Al nostre taller situat en Banc dels Aliments son reparats i preparats per la reutilització, amb tecnologia eReuse que permet la trassabilitat i la rendició de comptes amb els donants."
+      li_3: "Que un cop reparat es posa de nou en circulació per a que ONGs i particular pogueu adquirir-los a un <b>preu simbòlic.</b>"
+      li_4: "Que el preu permet cubrir les despeses de l'activitat i <b>sostenir llocs de treball de persones amb risc d'esclusió social</b>, al sector del mercat de la reparació."
   landing_page:
     hero:
       search: Buscar

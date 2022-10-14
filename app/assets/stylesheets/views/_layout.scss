@@ -39,3 +39,18 @@
     line-height: 50px;
   }
 }
+
+.infos-docs {
+  img {
+    position: relative;
+    top: 3px;
+  }
+  b, a {
+    color: #5fa645;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: #40702f;
+  }
+}

@@ -6,6 +6,22 @@
 
 %h2= t("infos.docs.title")
 
-%p= t("infos.docs.content").html_safe
+%p.infos-docs= t("infos.docs.content").html_safe
 
-%p= link_to(t("infos.docs.download_btn"), download_doc_pdf_infos_url)
+%p.infos-docs
+  = link_to(t("infos.docs.download_btn") , download_doc_pdf_infos_url)
+  = image_tag 'DescarregaDocumentWEB.png', width: 20
+
+%p.infos-docs= t("infos.docs.content_2").html_safe
+
+%p= t("infos.docs.content_3").html_safe
+
+%ul.infos-docs
+  %li
+    = t("infos.docs.li_1").html_safe
+  %li
+    = t("infos.docs.li_2").html_safe
+  %li
+    = t("infos.docs.li_3").html_safe
+  %li
+    = t("infos.docs.li_4").html_safe
