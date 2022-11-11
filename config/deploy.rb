@@ -11,7 +11,7 @@ set :rbenv_prefix, "RAILS_ENV=#{fetch(:stage)} RBENV_ROOT=#{fetch(:rbenv_path)} 
 set :puma_conf, "#{shared_path}/config/puma.rb"
 set :puma_service_unit_name, "#{fetch(:application)}.puma.service"
 
-append :linked_files, 'config/application.yml', 'config/puma.rb'
+append :linked_files, 'config/application.yml', 'config/puma.rb', 'config/config.yml'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'node_modules', 'storage'
 
 namespace :npm do
