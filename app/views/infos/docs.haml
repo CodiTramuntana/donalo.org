@@ -1,0 +1,11 @@
+- content_for :title, t('layouts.infos.docs').html_safe
+
+- content_for :title_header do
+  %h1= t("layouts.infos.info_docs_kassi")
+
+
+%h2= t("infos.docs.title")
+
+%p= t("infos.docs.content").html_safe
+
+%p= link_to(t("infos.docs.download_btn"), download_doc_pdf_infos_url)

@@ -1928,6 +1928,7 @@ ca:
     login: "Iniciar Sessió"
     signup: Registrar-se
     menu: Menú
+    docs: Documentació
   homepage:
     additional_private_listings_slate:
       additionally_one_private_offer_exists: "A més hi ha <b>aquesta altra oferta</b>,"
@@ -2043,6 +2044,10 @@ ca:
     how_to_use:
       default_title: "Com funciona"
       default_content: "Aquí pots trobar informació sobre com funciona %{marketplace_name}"
+    docs:
+      title: "Manual per usuaris"
+      content: "Aquí pots descarregar el manual per usuaris:"
+      download_btn: "Descarregar"
   landing_page:
     hero:
       search: Buscar
@@ -2095,6 +2100,8 @@ ca:
       news: Novetats
       register_details: "Política de privacitat"
       terms: "Termes d'ús"
+      info_docs_kassi: "Documentació"
+      docs: "Documentació"
     logged_in:
       admin: Admin
       go_to_your_profile_page: Perfil

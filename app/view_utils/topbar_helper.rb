@@ -125,7 +125,17 @@ module TopbarHelper
       }
     end
 
-    links + user_links
+    links + user_links + custom_links(locale_param: locale_param)
+  end
+
+  def custom_links(locale_param:)
+    return [
+      {
+        link: paths.docs_infos_path(locale: locale_param),
+        title: I18n.t("header.docs"),
+        priority: 0
+      }
+    ]
   end
 
   def locale_props(community, current_locale, path_after_locale_change, is_logged_in)

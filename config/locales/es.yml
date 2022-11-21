@@ -1918,6 +1918,7 @@ es:
     login: "Iniciar sesión"
     signup: Registrarse
     menu: Menú
+    docs: Documentación
   homepage:
     additional_private_listings_slate:
       additionally_one_private_offer_exists: "Adicionalmente  hay <b>otra oferta</b>,"
@@ -2033,6 +2034,10 @@ es:
     how_to_use:
       default_title: "Cómo funciona"
       default_content: "Aquí puedes encontrar información sobre cómo funciona %{marketplace_name}."
+    docs:
+      title: "Manual para usuarios"
+      content: "Aquí puedes descargar el manual para usuarios:"
+      download_btn: "Descargar"
   landing_page:
     hero:
       search: Buscar
@@ -2085,6 +2090,8 @@ es:
       news: Novedades
       register_details: "Política de Privacidad"
       terms: "Términos y Condiciones de Uso"
+      info_docs_kassi: "Documentación"
+      docs: "Documentación"
     logged_in:
       admin: Administrador
       go_to_your_profile_page: Perfil

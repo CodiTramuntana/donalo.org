@@ -29,6 +29,16 @@ class InfosController < ApplicationController
     @selected_left_navi_link = "privacy"
   end
 
+  def docs; end
+
+  def download_doc_pdf
+    send_file(
+      "#{Rails.root}/public/Manual_para_usuarios_DEF.pdf",
+      filename: "Manual_para_usuarios_DEF.pdf",
+      type: "application/pdf"
+    )
+  end
+  
   private
 
   def how_to_use_content?

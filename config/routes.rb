@@ -623,6 +623,8 @@ Rails.application.routes.draw do
         get :terms
         get :privacy
         get :news
+        get :docs
+        get :download_doc_pdf
       end
     end
     resource :terms do
